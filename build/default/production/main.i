@@ -3467,7 +3467,13 @@ void main(void)
 {
 
     SYSTEM_Initialize();
-# 70 "main.c"
+# 72 "main.c"
+    do { LATAbits.LATA0 = 0; } while(0);
+    do { LATAbits.LATA1 = 0; } while(0);
+    do { LATAbits.LATA4 = 0; } while(0);
+    do { LATAbits.LATA5 = 0; } while(0);
+
+
     do { LATAbits.LATA2 = 1; } while(0);
     _delay((unsigned long)((2000)*(4000000/4000.0)));
     do { LATAbits.LATA2 = 0; } while(0);
@@ -3485,6 +3491,7 @@ void main(void)
 
         SWDTEN = 1;
         __asm("sleep");
+
 
         SWDTEN = 0;
     }

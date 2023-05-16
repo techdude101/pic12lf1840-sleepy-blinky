@@ -66,6 +66,14 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
     
+    // NOTE: Ensure BOR & fail-safe clock monitor is disabled in CONFIG1 register
+    // otherwise excess current will be consumed in sleep mode (approx. 5 to 10uA)
+    // Set all outputs low to save power
+    IO_RA0_SetLow();
+    IO_RA1_SetLow();
+    IO_RA4_SetLow();
+    IO_RA5_SetLow();
+    
     // Turn the LED on for 2 seconds to show the device first powered up
     IO_RA2_SetHigh();
     __delay_ms(2000);

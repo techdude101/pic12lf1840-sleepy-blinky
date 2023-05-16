@@ -14,10 +14,10 @@
 #pragma config MCLRE = ON
 #pragma config CP = OFF
 #pragma config CPD = OFF
-#pragma config BOREN = ON
+#pragma config BOREN = NSLEEP
 #pragma config CLKOUTEN = OFF
 #pragma config IESO = ON
-#pragma config FCMEN = ON
+#pragma config FCMEN = OFF
 
 
 #pragma config WRT = OFF

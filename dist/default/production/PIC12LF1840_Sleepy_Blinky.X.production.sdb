@@ -48,7 +48,7 @@
 [v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
 "1733
 [v _LATA LATA `VEuc  1 e 1 @268 ]
-[s S73 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S87 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -56,8 +56,8 @@
 `uc 1 LATA5 1 0 :1:5 
 ]
 "1748
-[u S80 . 1 `S73 1 . 1 0 ]
-[v _LATAbits LATAbits `VES80  1 e 1 @268 ]
+[u S94 . 1 `S87 1 . 1 0 ]
+[v _LATAbits LATAbits `VES94  1 e 1 @268 ]
 "1915
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
 "2254
@@ -71,7 +71,7 @@
 "49 C:\code\PIC uC Projects\c\PIC12LF1840_Sleepy_Blinky.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"90
+"99
 } 0
 "50 C:\code\PIC uC Projects\c\PIC12LF1840_Sleepy_Blinky.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
